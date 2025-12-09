@@ -1,0 +1,144 @@
+:root {
+	--primary-color: #6f4e37;
+	--secondary-color: #a0826d;
+	--accent-color: #d4a574;
+	--light-bg: #f5f1ed;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+	background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: var(--accent-color) !important;
+}
+
+@media (max-width: 768px) {
+	.navbar-brand-text {
+		display: none;
+	}
+}
+
+.nav-link {
+	color: var(--light-bg) !important;
+	margin: 0 10px;
+}
+
+.nav-link:hover {
+	color: var(--accent-color) !important;
+}
+
+@media (max-width: 768px) {
+	.nav-link {
+		margin-left: 0;
+	}
+}
+
+.hero-section {
+	background: linear-gradient(
+		135deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	color: white;
+	padding: 60px 0;
+	text-align: center;
+}
+
+.content-section {
+	padding: 50px 0;
+}
+
+.content-section:nth-child(even) {
+	background-color: var(--light-bg);
+}
+
+.section-title {
+	color: var(--primary-color);
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+footer {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.card {
+	border: none;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+}
+
+.card .card-title {
+	min-height: 50px;
+}
+
+.card .card-body .card-text {
+	min-height: 170px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+.btn-custom {
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+}
+
+.btn-custom:hover {
+	background-color: var(--secondary-color);
+	color: white;
+}
+
+.active-page {
+	display: block;
+}
+
+.hidden-page {
+	display: none;
+}
+
+.price-tag {
+	color: var(--primary-color);
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.contact-card {
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	min-height: 329px;
+}
+
+@media (max-width: 768px) {
+	footer > div > p {
+		font-size: 0.8rem;
+	}
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+}
